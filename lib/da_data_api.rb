@@ -1,4 +1,6 @@
 class DaDataAPI
+    require 'rest-client'
+    
     def initialize(options = {})
       @base_url = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address'
       @token = options[:token]
@@ -24,7 +26,7 @@ class DaDataAPI
         }
       }
   
-      response = RestClient.post(
+      response = ::RestClient.post(
         @base_url,
         payload.to_json,
         {
