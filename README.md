@@ -1,2 +1,6 @@
 # da_data_api
-Api to dadata service
+API to dadata service
+
+## Usage
+results = $dadata.find(place, from_bound: :region, to_bound: :settlement)  
+location = results.first
