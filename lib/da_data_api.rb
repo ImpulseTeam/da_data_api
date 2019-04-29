@@ -1,4 +1,5 @@
-class DaDataAPI
+module DaDataAPI
+  class Request
     require 'rest-client'
     
     def initialize(options = {})
@@ -55,4 +56,5 @@ class DaDataAPI
       end || []
     end
   end
+end
   
