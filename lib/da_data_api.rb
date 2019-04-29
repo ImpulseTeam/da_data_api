@@ -1,3 +1,5 @@
+require 'da_data_api/result'
+
 module DaDataAPI
   class Request
     require 'rest-client'

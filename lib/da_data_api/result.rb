@@ -1,4 +1,5 @@
-class DaDataAPI::Result
+module DaDataAPI
+  class Result
     DATA_FIELDS = [
       :postal_code,	# Индекс
       :country,	# Страна
@@ -95,4 +96,5 @@ class DaDataAPI::Result
       @result['unrestricted_value']
     end
   end
+end
   
