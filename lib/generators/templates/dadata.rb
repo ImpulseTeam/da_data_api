@@ -1,1 +1,1 @@
-$dadata = ::DaDataAPI.new(token: ENV.fetch('DADATA_TOKEN'))
+$dadata = ::DaDataAPI::Request.new(token: ENV.fetch('DADATA_TOKEN'))
